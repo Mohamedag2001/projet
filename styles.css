@@ -27,25 +27,30 @@ body {
     line-height: 1.6;
 }
 /* Styliser la carte de produit */
+.product-image {
+    width: 100%;
+    max-width: 300px; /* Limite la largeur des images */
+    margin: 0 auto;  /* Centre l'image */
+    display: block;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around; /* Espacement égal entre les cartes */
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+}
+
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;  /* Ajuste la largeur de chaque carte */
-    margin: 10px;      /* Espacement entre les cartes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    padding: 15px;
     text-align: center;
     font-family: Arial, sans-serif;
-    padding: 15px;
-    display: flex;
-    flex-direction: column; /* Aligner les éléments verticalement dans chaque carte */
-    justify-content: space-between;
 }
 
-/* Style de la classe price */
-.price {
-    color: grey;
-    font-size: 22px;
-}
-
-/* Style des boutons dans les cartes */
 .card button {
     border: none;
     outline: 0;
@@ -61,19 +66,6 @@ body {
 .card button:hover {
     opacity: 0.7;
 }
-
-/* Pour aligner les cartes horizontalement dans la section produits */
-#produits .card-container {
-    display: flex;
-    flex-wrap: wrap;  /* Permet aux cartes de passer à la ligne suivante si nécessaire */
-    justify-content: space-around; /* Espacement uniforme entre les cartes */
-}
-
-#produits .card-container .card {
-    margin: 15px;
-    width: 30%;  /* Ajuster la largeur des cartes pour 3 produits par ligne */
-}
-
 /* Mise en forme de l'en-tête */
 header {
     background: #ffffff;
@@ -164,14 +156,24 @@ main section p {
     color: #555;
 }
 
+/* Styles pour ajouter une bordure autour des images de services et témoignages */
 .section-image {
-    max-width: 150px;
-    height: 150px;
-    border-radius: 5px;
-    margin-top: 5px;
-    border: 1px solid #75dc3a;
-    font-family: Arial, sans-serif;
+    width: 150px;
+    max-width: 500px;
+    display: block;
+    margin: 20px auto;
+    border: 5px solid #faf8f1;  /* Bordure noire de 5px */
+    padding: 10px;           /* Espace entre l'image et la bordure */
+    border-radius: 10px;     /* Coins arrondis pour la bordure */
+    box-sizing: border-box;  /* Assure que le padding n'ajoute pas à la largeur totale */
 }
+
+/* Ajout d'un effet lorsque l'image est survolée */
+.section-image:hover {
+    border-color: #ff4500;  /* Changer la couleur de la bordure au survol */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  /* Ajouter un effet d'ombre */
+}
+
 
 /* Formulaire */
 form {
@@ -211,45 +213,27 @@ form button:hover {
     background: #45a049;
 }
 
-/* Styliser le footer */
+/* Footer styles */
 .footer {
-    background-color: #000; /* Couleur de fond du footer */
-    color: white;           /* Couleur du texte */
-    padding: 20px;          /* Espacement interne */
-    display: flex;          /* Utilisation de flexbox pour l'alignement horizontal */
-    justify-content: space-between; /* Espacement égal entre les éléments */
-    align-items: center;    /* Centrer verticalement les éléments */
-    flex-wrap: wrap;        /* Permet aux éléments de se réorganiser si nécessaire */
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: hsl(0, 0%, 95%);
 }
 
-/* Styliser les éléments du footer (divisions Objectif, Heure, Contactez-nous) */
 .footer div {
-    text-align: center;     /* Centrer le texte dans chaque division */
-    flex: 1;                /* Chaque div prend la même largeur */
-    margin: 0 10px;         /* Espacement horizontal entre les éléments */
+    flex: 1;
+    padding: 10px;
 }
 
-/* Styliser le texte de copyright, en bas */
 .footer .copyright {
-    text-align: center;     /* Centrer le texte */
-    width: 100%;            /* Prendre toute la largeur disponible */
-    margin-top: 20px;       /* Espacement au-dessus */
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
 }
 
-/* Ajouter un peu de marge pour les petits écrans */
-@media (max-width: 768px) {
-    .footer {
-        flex-direction: row; /* Maintenir les éléments en ligne même sur mobile */
-        text-align: center;   /* Centrer le texte sur mobile */
-    }
-
-    .footer div {
-        margin: 0 10px;       /* Gérer les marges entre les éléments */
-    }
-
-    .footer .copyright {
-        margin-top: 20px;     /* Espacement supérieur pour la section copyright */
-    }
+footer p {
+    font-size: 14px;
 }
 
 
