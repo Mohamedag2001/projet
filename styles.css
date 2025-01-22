@@ -1,0 +1,257 @@
+
+/* Image de fond pour la section d'accueil */
+#accueil {
+    background-image: url('AGRO.jpeg'); /* Remplacez par le chemin de votre image de fond */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 50px 0;
+    color: white; /* Pour améliorer la visibilité du texte sur l'image de fond */
+}
+
+.accueil-image {
+    width: 45%;
+    margin: 10px;
+    border-radius: 8px; /* Facultatif : pour arrondir les coins des images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Facultatif : ajouter une ombre autour des images */
+}
+main {
+    text-align: center;
+    padding: 50px 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+/* Styliser la carte de produit */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;  /* Ajuste la largeur de chaque carte */
+    margin: 10px;      /* Espacement entre les cartes */
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 15px;
+    display: flex;
+    flex-direction: column; /* Aligner les éléments verticalement dans chaque carte */
+    justify-content: space-between;
+}
+
+/* Style de la classe price */
+.price {
+    color: grey;
+    font-size: 22px;
+}
+
+/* Style des boutons dans les cartes */
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card button:hover {
+    opacity: 0.7;
+}
+
+/* Pour aligner les cartes horizontalement dans la section produits */
+#produits .card-container {
+    display: flex;
+    flex-wrap: wrap;  /* Permet aux cartes de passer à la ligne suivante si nécessaire */
+    justify-content: space-around; /* Espacement uniforme entre les cartes */
+}
+
+#produits .card-container .card {
+    margin: 15px;
+    width: 30%;  /* Ajuster la largeur des cartes pour 3 produits par ligne */
+}
+
+/* Mise en forme de l'en-tête */
+header {
+    background: #ffffff;
+    color: rgb(112, 165, 72);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul.left-nav {
+    flex-grow: 1;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul.right-nav {
+    display: flex;
+    gap: 10px;
+}
+
+header nav ul li a,
+header nav ul li button {
+    color: rgb(98, 41, 41);
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s;
+}
+
+header nav ul li a:hover,
+header nav ul li button:hover {
+    background: #45a049;
+    border-radius: 5px;
+}
+
+header nav ul li button {
+    background: white;
+    color: #4CAF50;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+header nav ul li .icon {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+/* Main Sections */
+main section {
+    background: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+main section h1, main section h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+main section p {
+    color: #555;
+}
+
+.section-image {
+    max-width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    margin-top: 5px;
+    border: 1px solid #75dc3a;
+    font-family: Arial, sans-serif;
+}
+
+/* Formulaire */
+form {
+    background: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+    color: #333;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #45a049;
+}
+
+/* Styliser le footer */
+.footer {
+    background-color: #000; /* Couleur de fond du footer */
+    color: white;           /* Couleur du texte */
+    padding: 20px;          /* Espacement interne */
+    display: flex;          /* Utilisation de flexbox pour l'alignement horizontal */
+    justify-content: space-between; /* Espacement égal entre les éléments */
+    align-items: center;    /* Centrer verticalement les éléments */
+    flex-wrap: wrap;        /* Permet aux éléments de se réorganiser si nécessaire */
+}
+
+/* Styliser les éléments du footer (divisions Objectif, Heure, Contactez-nous) */
+.footer div {
+    text-align: center;     /* Centrer le texte dans chaque division */
+    flex: 1;                /* Chaque div prend la même largeur */
+    margin: 0 10px;         /* Espacement horizontal entre les éléments */
+}
+
+/* Styliser le texte de copyright, en bas */
+.footer .copyright {
+    text-align: center;     /* Centrer le texte */
+    width: 100%;            /* Prendre toute la largeur disponible */
+    margin-top: 20px;       /* Espacement au-dessus */
+}
+
+/* Ajouter un peu de marge pour les petits écrans */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: row; /* Maintenir les éléments en ligne même sur mobile */
+        text-align: center;   /* Centrer le texte sur mobile */
+    }
+
+    .footer div {
+        margin: 0 10px;       /* Gérer les marges entre les éléments */
+    }
+
+    .footer .copyright {
+        margin-top: 20px;     /* Espacement supérieur pour la section copyright */
+    }
+}
+
+
+
+
