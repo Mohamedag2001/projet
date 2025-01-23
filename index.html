@@ -9,29 +9,57 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="logo">djims</div>
-        <nav>
-            <ul class="left-nav">
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#produits">Produits</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <ul class="right-nav">
-                <li><a href="#"><i class="fas fa-search icon"></i> Search</a></li>
-                <li><a href="#"><i class="fas fa-shopping-cart icon"></i> Shop</a></li>
-                <li><button>S'abonner</button></li>
-            </ul>
+    <header class="navbar">
+        <div class="logo">
+            <img src="AGRO.jpeg" alt="Logo DIMS">
+        </div>
+        <nav class="nav-links">
+            <a href="#accueil">Accueil</a>
+            <a href="#produits">Produits</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
         </nav>
+        <div class="nav-icons">
+            <button class="icon-btn search-btn">
+                <span>&#128269;</span>
+            </button>
+            <button class="icon-btn cart-btn">
+                <span>&#128722;</span>
+            </button>
+            <button class="subscribe-btn">S'abonner</button>
+        </div>
     </header>
-
     <main>
-        <section id="accueil">
-            <h1>Bienvenue sur djims</h1>
-            <strong><p>Agro Alimentaire.</p></strong>
-            <img src="trans.jpeg" alt="Image d'accueil 1" class="accueil-image">
-            <img src="asset 1.pNg" alt="Image d'accueil 2" class="accueil-image">
+        <section class="hero">
+            <div class="hero-content">
+              <h3>Produits Locaux</h3>
+              <h1>Transformation Agroalimentaire</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, ipsam voluptatem? Dolor officia tempora nulla vel debitis inventore rem veniam ad iure laborum voluptatum.</p>
+              <button>Choisissez Votre Produit</button>
+            </div>
+            <div class="hero-image">
+              <img src="trans.jpeg" alt="Produits Locaux">
+              <img src="AGRO.jpeg" alt="Produits Locaux">
+            </div>
+          </section>
+          <section class="transformation-section">
+            <div class="text-content">
+                <h2 class="section-title">Transformation Agroalimentaire</h2>
+                <p class="section-description">
+                    Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Saepe Quisquam Enim Placeat Sit Facilis Magni Excepturi Ab Quia Ex Mollitia!
+                </p>
+                <div class="image-grid">
+                    <div class="image-box">
+                        <img src="bissap.jpeg" alt="Field">
+                    </div>
+                    <div class="image-box">
+                        <img src="Sakhal.jpeg" alt="Farmer">
+                    </div>
+                    <div class="image-box">
+                        <img src="bissap.jpeg" alt="Factory">
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="produits">
@@ -60,18 +88,68 @@
                 </div>
             </div>
         </section>
-
-        <section id="services">
-            <h2>Services</h2>
-            <p>Nos produits:</p>
-            <img src="asset 3.jpeg" alt="Image de services" class="section-image">
+        <section class="email-section">
+            <div class="form-wrapper">
+                <input type="email" placeholder="Enter Voter Email" class="email-input">
+                <button class="submit-button">ENVOYE</button>
+            </div>
+        </section>
+        
+        <section class="services-section">
+            <h2 class="services-title">Nos Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="icon">
+                        <img src="bissap.jpeg" alt="Service Icon">
+                    </div>
+                    <h3 class="service-title">Nectar Et Sirop De Ditax</h3>
+                    <p class="service-description">
+                        Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Voluptates Laudantium Vero, Expedita Accusantium Est Excepturi Voluptatibus Nemo Molestiae Saepe Reiciendis Ad Hic Sapiente Nihil Harum Vitae Id In Quas Animi?
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">
+                        <img src="bissap.jpeg" alt="Service Icon">
+                    </div>
+                    <h3 class="service-title">Nectar Et Sirop De Ditax</h3>
+                    <p class="service-description">
+                        Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Voluptates Laudantium Vero, Expedita Accusantium Est Excepturi Voluptatibus Nemo Molestiae Saepe Reiciendis Ad Hic Sapiente Nihil Harum Vitae Id In Quas Animi?
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">
+                        <img src="bissap.jpeg" alt="Service Icon">
+                    </div>
+                    <h3 class="service-title">Nectar Et Sirop De Ditax</h3>
+                    <p class="service-description">
+                        Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Voluptates Laudantium Vero, Expedita Accusantium Est Excepturi Voluptatibus Nemo Molestiae Saepe Reiciendis Ad Hic Sapiente Nihil Harum Vitae Id In Quas Animi?
+                    </p>
+                </div>
+            </div>
         </section>
 
-        <section id="temoignages">
+        <section class="testimonials">
             <h2>Témoignages</h2>
-            <img src="med.jpg" alt="Image de témoignages" class="section-image">
-            <p>Produit de qualité.</p>
-        </section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A perspiciatis nemo cupiditate doloribus distinctio amet tenetur reprehenderit, atque id aliquam!</p>
+            <div class="testimonials-container">
+              <div class="testimonial-card">
+                <img src="med.jpg" alt="Abdou Khadim">
+                <h3>Abdou Khadim</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium vero, expedita accusantium est excepturi. Voluptatibus nemo molestiae saepe reiciendis ad hic sapiente nihil harum vitae id in quas animi?</p>
+              </div>
+              <div class="testimonial-card">
+                <img src="med.jpg" alt="Abdou Khadim">
+                <h3>Abdou Khadim</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium vero, expedita accusantium est excepturi. Voluptatibus nemo molestiae saepe reiciendis ad hic sapiente nihil harum vitae id in quas animi?</p>
+              </div>
+              <div class="testimonial-card">
+                <img src="med.jpg" alt="Abdou Khadim">
+                <h3>Abdou Khadim</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium vero, expedita accusantium est excepturi. Voluptatibus nemo molestiae saepe reiciendis ad hic sapiente nihil harum vitae id in quas animi?</p>
+              </div>
+            </div>
+          </section>
+          
 
         <section id="contact">
             <h2>Contact</h2>
@@ -90,29 +168,29 @@
         </section>
     </main>
 
-    <footer class="footer">
-        <div>
-            <h3>Objectif</h3>
-            <p>Notre objectif est de fournir des produits de qualité.
-            Notre objectif est de fournir des produits de qualité.
-            Notre objectif est de fournir des produits de qualité.</p>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-section">
+            <h3>Objectifs</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum molestiae aliquam sed dolore repellendus quo, quaerat recusandae dolores aliquid quasi! Earum, ad? Culpa velit possimus vitae maiores mollitia! Laboriosam, facilis.</p>
+          </div>
+          <div class="footer-section">
+            <h3>Heures</h3>
+            <p>Lundi: 8h-18</p>
+            <p>Mardi: 8h-18</p>
+            <p>Mercredi: 8h-18</p>
+          </div>
+          <div class="footer-section">
+            <h3>Me Contacter</h3>
+            <p>+221 77 537 71 82</p>
+            <p>Abdoukhadim70é@gmail.com</p>
+            <p>Dakar, Sénégal</p>
+          </div>
         </div>
-        <div>
-            <h3>Heure</h3>
-            <p>9h - 18h, Lundi à Vendredi
-            9h - 18h, Lundi à Vendredi</p>
+        <div class="footer-bottom">
+          <p>Copyright ©2023 Learn Programming | Tous Droits Réservés</p>
         </div>
-        <div>
-            <h3>Contactez-nous</h3>
-            <p>+221 77 537 71 82<br>
-            Abdoulkhadim@gmail.com<br>
-            Dakar,Senegal</p>
-        </div>
-        <!-- Section de copyright en bas -->
-        <div class="copyright">
-            <p>© 2025 djims. Tous droits réservés.</p>
-        </div>
-    </footer>
+      </footer>      
 </body>
 </html>
 
