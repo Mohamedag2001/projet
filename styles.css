@@ -333,6 +333,8 @@ main section p {
     padding: 50px 20px;
     background-color: #f9f9f9; /* Couleur de fond pour la section */
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('AGRO.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
   .testimonials h2 {
@@ -448,6 +450,8 @@ main section p {
     justify-content: center;
     color: white;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('med.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .contact-section h2 {
     text-align: center;
